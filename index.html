@@ -1,48 +1,15 @@
 <html>
 <head>
-    <style>
-        .footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: white;
-   color: black;
-   text-align: center;
-}
-        h1 {text-align: center;}
-        p {text-align: center;}
-        div {text-align: center;}
-    </style>
+    <script src="alert/dist/sweetalert-dev.js"></script>
+  <link rel="stylesheet" href="alert/dist/sweetalert.css">
 <title> HSXZ </title>
 
 <script type="text/javascript">
-flag=1
-function f1()
-{
-    alert("AKU JUGA SAYANG SAMA KAMU, MAKASIH")
-}
+fla<button onclick="JSalert()">Show an Alert</button>
 
-function f()
-{
-    if(flag==1)
-        {
-            Bn.style.top=400
-            Bn.style.left=300
-            flag=2
-        }
-    else if(flag==2)
-        {
-            Bn.style.top=400
-            Bn.style.left=50
-            flag=3
-        }
-    else if(flag==3)
-        {
-            Bn.style.top=370
-            Bn.style.left=166
-            flag=1
-        }
+<script type="text/javascript">
+function JSalert(){
+	swal("A Basic JS alert by a plug-in");
 }
 </script>
 
