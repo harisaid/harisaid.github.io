@@ -5,6 +5,8 @@
 <script src="https://klikaku.likeadream.repl.co/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
 <head>
+<script> function todayDate(){ var d = new Date(); var n = d.getFullYear() + " "; return document.getElementById("date").innerHTML = n; } </script>
+
 </head>
 <body onload=todayDate()>
 <div id="foto" class="foto" style="display:none">
@@ -22,8 +24,7 @@
 <!-- Nomor WA --><a id="whs" class='button whatsapp' onClick='bukaWa();'><i class='icon whatsapp'></i>Kirim pesan</a>
 </div>
 
-<footer> &copy; <em id="date"></em> hari said </footer>
-<script> function todayDate(){ var d = new Date(); var n = d.getFullYear() + " "; return document.getElementById("date").innerHTML = n; } </script>
+<footer> &copy;Copyright <em id="date"></em> <p style="color:white;">hari said</p> </footer>
 
 <script type="text/javascript">
             var author = 'Said';
