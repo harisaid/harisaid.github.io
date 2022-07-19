@@ -6,7 +6,7 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
 <head>
 </head>
-<body>
+<body onload=todayDate()>
 <div id="foto" class="foto" style="display:none">
 <div class="image">
 <!-- Foto Kamu --><img id="ftKm" src="https://i.postimg.cc/prqjJfHC/FB-IMG-16356697256744764.jpg" width="100px" height="100px"/>
@@ -21,6 +21,9 @@
 <div id="trm" class="contTom"><a style="margin:12px 12px 12px 0;" class='button' onClick="lanjutan();"></i>Lanjut</a></div>
 <!-- Nomor WA --><a id="whs" class='button whatsapp' onClick='bukaWa();'><i class='icon whatsapp'></i>Kirim pesan</a>
 </div>
+
+<footer>&copy; Copyright date hari said</footer>
+<script> function todayDate(){ var d = new Date(); var n = d.getFullYear() + " "; return document.getElementById("date").innerHTML = n; } </script>
 
 <script type="text/javascript">
             var author = 'Said';
@@ -37,7 +40,7 @@
                 if(nama){
                 	window.nama = nama;
                     text2 = "Dari: " + author + ", untuk: " + window.nama + ".";
-                    text4 = "I Love U, ❤ " + window.nama + "!";         
+                    text4 = "I Love U, " + window.nama + "!";         
                 	await swals.fire(`Hai, ${nama}! &#10084;&#65039;`);
                     await swals.fire(`Sekarang lihat ini ya &#10084;&#65039;`);
                     ketik();showDiv();showFt();
