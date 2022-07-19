@@ -22,7 +22,7 @@
 <!-- Nomor WA --><a id="whs" class='button whatsapp' onClick='bukaWa();'><i class='icon whatsapp'></i>Kirim pesan</a>
 </div>
 
-<footer>&copy; Copyright date hari said</footer>
+<footer> &copy; <em id="date"></em> hari said </footer>
 <script> function todayDate(){ var d = new Date(); var n = d.getFullYear() + " "; return document.getElementById("date").innerHTML = n; } </script>
 
 <script type="text/javascript">
@@ -40,7 +40,7 @@
                 if(nama){
                 	window.nama = nama;
                     text2 = "Dari: " + author + ", untuk: " + window.nama + ".";
-                    text4 = "I Love U, " + window.nama + "!";         
+                    text4 = "I Love U, ❤ " + window.nama + "!";         
                 	await swals.fire(`Hai, ${nama}! &#10084;&#65039;`);
                     await swals.fire(`Sekarang lihat ini ya &#10084;&#65039;`);
                     ketik();showDiv();showFt();
